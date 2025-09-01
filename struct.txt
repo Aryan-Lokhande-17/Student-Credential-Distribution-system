@@ -1,0 +1,67 @@
+node mod
+
+uploads
+
+
+assets
+    php
+        admin
+            admin_lndg
+            add_cred
+            update_cred
+            upload_cred
+            upload_attndc
+            upload_result
+
+        stdnt
+            stdnt_lndg
+            view, etc
+
+    css
+        style.css
+
+    js
+        upload.js
+    
+
+db
+    users.db
+
+
+
+
+__________________
+
+project/
+├── backend/
+│   ├── ipfs/
+│   │   ├── uploads/               # Directory for temporary file storage
+│   │   ├── ipfs_setup.py          # Python file for IPFS setup and interaction
+│   ├── blockchain/
+│   │   ├── blockchain.py          # Python file for managing the blockchain
+│   │   ├── transactions.py        # Python file for adding transactions to blockchain
+│   ├── app.py                     # Flask app for API
+│   ├── templates/
+│   │   ├── index.html             # Landing page for Flask API (optional, for testing)
+│   ├── static/                    # Static files for Flask
+├── frontend/
+│   ├── admin/
+│   │   ├── adminland.php          # Admin landing page
+│   │   ├── addcredform.php        # Form for adding credentials
+│   │   ├── addcred.php            # Process and upload credentials
+│   │   ├── uploadres.php          # Upload results (uses IPFS and Flask API)
+│   │   ├── updateatten.php        # Update attendance
+│   │   ├── viewcred.php           # View credentials
+│   │   ├── viewatten.php          # View attendance
+│   ├── student/
+│   │   ├── studentland.php        # Student landing page
+│   │   ├── viewcred.php           # View credentials
+│   ├── auth/
+│   │   ├── login.php              # Login page
+│   │   ├── logout.php             # Logout page
+│   ├── setup/
+│   │   ├── createdb.php           # Create SQLite database
+│   │   ├── createtab.php          # Create necessary database tables
+├── database/
+│   ├── app.db                     # SQLite database file
+└── requirements.txt               # Python dependencies
